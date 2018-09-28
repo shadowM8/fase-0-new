@@ -1,0 +1,10 @@
+Kamu perlu pengetahuan terminal atau command prompt serta CLI. Kamu harus sudah bisa:
+
+▢ Navigasi ke berbagai directory/folder  --> cd (direktori yang dituju) cd ..(menuju folder di atas kondisi skrg)
+▢ Membuat file dan folder baru	--> file = touch (nama file) / folder baru = mkdir ( nama folder)
+▢ Menghapus file dan folder	--> hapus folder = rmdir (nama folder) / hapus file = rm (nama file) / hapus SEMUA file = rm *
+▢ Melihat berbagai file yang ada di folder --> di dalam folder ketik ls -l(detail) -a(hidden) -t(sort time newest at top)
+▢ Mengetahui lokasi folder di mana kita berada --> whereis ls
+▢ Memindahkan file ke berbagai folder	--> mv -T dir1 dir2 // dir 1 origin dir 2 destination
+▢ Menyalin file atau folder ke tempat berbeda --> cp (-i -b) dir 1 dir 2 // -i (ditanya mo ditimpa apa ngga) -b ( bikin backup otomatis di destin)
+▢ Membuka atau mengubah file ke dalam editor teks/code --> nano?
