@@ -1,0 +1,5 @@
+cek https://github.com/hacktiv8/phase-0-activities/blob/master/modules/css3-basics.md
+
+important notes :
+syntax selector tergantung dari lokasi elemen yang akan disetel propertynya.
+Contoh :

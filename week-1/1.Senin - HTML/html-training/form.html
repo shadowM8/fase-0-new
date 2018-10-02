@@ -1,0 +1,60 @@
+<!doctype html>
+<head>
+<title> Personal Training - Senin - HTML </title>
+<meta charset="UTF-8">
+</head>
+<body>
+<header>
+	<h1><b>Buat Account Baru</b></h1>
+	<h3> Form untuk Sign Up</h3>
+</header>
+<div>
+	<form action="welcome.html" method="POST">
+		<p>
+      <label for="first-name">First Name :</label><br>
+      <input id="first-name" name="firstName" type="text">
+    </p>
+    <p>
+    	<label for="last-name">Last Name :</label><br>
+        <input id="last-name" name="lastName" type="text">
+    </p>
+    <p>
+    	<label for="gender">Gender :</label><br>
+    	<input type="radio" name="gender" id="male-radio" value="male">
+    	<label for="male-radio">Male</label><br>
+    	<input type="radio" name="gender" id="female-radio" value="female">
+    	<label for="female-radio">Female</label><br>
+    	<input type="radio" name="gender" id="other-radio" value="other">
+    	<label for="other-radio">Other</label>
+    </p>
+    <p>
+    	<label for="nationality">Nationality :</label><br>
+    	<input type="text" name="nationality" list="nationList">
+    	<datalist id="nationList">
+    		<select name="altNationList">
+    			<option value="Indonesian">
+    			<option value="Philipine">
+    			<option value="Australian">
+    			<option value="Netherland">
+    		</select>
+    	</datalist>
+    </p>
+    <p>
+    	<label for="language">Language Spoken :</label><br>
+    	<input type="checkbox" name="language" id="bahasa-checkbox" value="bahasa">
+    	<label for="bahasa-checkbox">Bahasa</label><br>
+    	<input type="checkbox" name="language" id="english-checkbox" value="english">
+    	<label for="english-checkbox">English</label><br>
+    	<input type="checkbox" name="language" id="other-checkbox" value="other">
+    	<label for="other-checkbox">Other</label><br>
+    </p>
+    <p>
+    	<label for="bio">Bio :</label><br>
+    	<textarea rows="8" cols="22" name="bio"></textarea>
+    </p>
+    <p>
+    	<input type="submit" value="Sign Up">
+    </p>
+	</form>
+</div>
+</body>
