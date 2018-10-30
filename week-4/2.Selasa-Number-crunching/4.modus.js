@@ -1,19 +1,19 @@
 function cariModus(arr) {
   var modus = 0
-  var munculModus =0
-  for (var i = 0; i<arr.length; i++) {    
+  var munculModus = 0
+  for (var i = 0; i < arr.length; i++) {
     var counter = 1
-    for (var j = i+1; j < arr.length; j++) {
-      if (arr[i]===arr[j]){
+    for (var j = i + 1; j < arr.length; j++) {
+      if (arr[i] === arr[j]) {
         counter++
       }
     }
-    if ( counter > munculModus) {
+    if (counter > munculModus) {
       munculModus = counter
       modus = arr[i]
     }
   }
-  if(munculModus < 2 || munculModus === arr.length) {
+  if (munculModus < 2 || munculModus === arr.length) {
     return -1
   }
   return modus

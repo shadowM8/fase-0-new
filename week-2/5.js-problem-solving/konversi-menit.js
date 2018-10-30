@@ -1,13 +1,19 @@
 function konversiMenit(menit) {
     var hasil = ''
-    var digitMenit = Math.round(menit / 60)
+    var digitMenit = Math.floor(menit / 60)
     var digitDetik = 0
     if (menit % 60 < 10){
-        digitDetik = '0'+ (menit % 60)
+        digitDetik = '0'+ (menit % 60)        
     } else {
         digitDetik = menit % 60
     }
-    return digitMenit + ":" +digitDetik
+    // return digitMenit + ":" +digitDetik
+    
+    if (digitMenit < 1) {
+        return digitDetik+' detik'
+    } else {
+        return digitMenit+' menit '+digitDetik+' detik'
+    }
   }
   
   // TEST CASES

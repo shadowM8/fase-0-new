@@ -2,20 +2,23 @@ function xo(str) {
     if (str.length % 2 !== 0) {
         return false
     }
-    var count = 0
-    var count2 = 0
+    var counterX = 0
+    var counterO = 0
     for (var i = 0; i <str.length; i++){
         if (str[i]==='x'){
-            count++
+            //counterX++
+            counterX = counterX +1
         } else {
-            count2++
+            counterO++
         }
     }
-    if (count === count2){
-        return true
-    } else {
-        return false
-    }
+    return 'x: '+counterX + " dan o:  "+counterO
+    // if (count === count2){
+    //     return true
+    // } else {
+    //     return false
+    // }
+
   }
   
   // TEST CASES
