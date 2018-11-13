@@ -1,20 +1,34 @@
 function groupAnimals(animals) {
+    // deklarasikan variabel hasil dengan array kosong
+    //deklarasi kamusHewan dengan string kosong
     var hasil = [];
     var kamusHewan = '';
 
+    //lakukan loop [i] untuk mengecek nilai dari masing2 variabel pada animals
+    //
     for (var i = 0; i <animals.length; i++){
+        //deklarasi variabel hurufPertama untuk mengecek huruf pertama dari animals[i]
+        // hurufPertama = animals[i][0]
         var currentAnimal = animals[i]
         var hurufPertama = currentAnimal[0]
         var indeksSementara = -1
+        //lakukan loop [j] untuk membandingkan nilai dari loop [i] terhadap kamusHewan loop [j]
         for (var j = 0; j<kamusHewan.length; j++){
+            //jika kamusHewan pada indeks ke j itu sama dengan hurufPertama, maka set indeksSementara = j
             if(kamusHewan[j]===hurufPertama) {
                 indeksSementara = j
             }
         }
+        //jika indeksSementara sama dengan -1 , berarti nilai pd animals[i] masih unik, karena 
+        //huruf pertamanya tidak sama dengan kamus yang ke j lakukan 
         if (indeksSementara === -1) {
+            // update kamusHewan dengan huruf pertama dari animals[i] yang unik ini
+            // lalu push animals[i] ke variabel hasil
             kamusHewan += hurufPertama
             hasil.push([currentAnimal])
         } else {
+            // jika indeksSementara sama dengan j, berarti variabel animals[i] memiliki awalan huruf yang sudah
+            // disimpan oleh kamusHewan, sehingga dilakukan
             hasil[indeksSementara].push(currentAnimal)
         }
 

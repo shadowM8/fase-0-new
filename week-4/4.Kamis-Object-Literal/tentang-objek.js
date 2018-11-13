@@ -42,43 +42,50 @@ var supermanObj = {
 
 // four variables are created and assigned in a single go, 
 // separated by commas
-// var myObj = new Object(),
-//     str = 'myString',
-//     rand = Math.random(),
-//     obj = new Object();
+var myObj = new Object(),
+    str = 'myString',
+    rand = Math.random(),
+    obj = new Object();
 
-// myObj.type              = 'Dot syntax';
-// myObj['date created']   = 'String with space';
-// myObj[str]              = 'String value';
-// myObj[rand]             = 'Random Number';
-// myObj[obj]              = 'Object';
-// myObj['']               = 'Even an empty string';
+myObj.type              = 'Dot syntax';
+myObj['date created']   = 'String with space';
+myObj[str]              = 'String value';
+myObj[rand]             = 'Random Number';
+myObj[obj]              = 'Object';
+myObj['']               = 'Even an empty string';
 
 // console.log(myObj);
 
-var myCar = new Object();
-myCar.factory = 'Ford';
-myCar.model = 'Mustang';
-myCar.year = 1969;
+var y = 'antoz'
+var alphabet = new Object()
+for (var i = 0; i < y.length; i ++){
+  alphabet[y[i]] = i
+}
+console.log(alphabet)
+
+// var myCar = new Object();
+// myCar.factory = 'Ford';
+// myCar.model = 'Mustang';
+// myCar.year = 1969;
 
 
-var propertyName = 'make';
-myCar[propertyName] = 'BMW';
+// var propertyName = 'make';
+// myCar[propertyName] = 'BMW';
 
-propertyName = 'model';
-myCar[propertyName] = 'S7';
+// propertyName = 'model';
+// myCar[propertyName] = 'S7';
 
-console.log(myCar)
+// console.log(myCar)
 
-function showProps(obj, objName) {
-    var result = '';
-    for (var i in obj) {
-      // obj.hasOwnProperty() is used to filter out properties from the object's prototype chain
-      if (obj.hasOwnProperty(i)) {
-        result += objName + '.' + i + ' = ' + obj[i] + '\n';
-      }
-    }
-    return result;
-  }
+// function showProps(obj, objName) {
+//     var result = '';
+//     for (var i in obj) {
+//       // obj.hasOwnProperty() is used to filter out properties from the object's prototype chain
+//       if (obj.hasOwnProperty(i)) {
+//         result += objName + '.' + i + ' = ' + obj[i] + '\n';
+//       }
+//     }
+//     return result;
+//   }
 
-console.log(showProps(myCar, 'mobil gw'))
+// console.log(showProps(myCar, 'mobil gw'))
